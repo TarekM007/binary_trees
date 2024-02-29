@@ -35,11 +35,11 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	binary_tree_t *left, *right;
 
-	left = tree->left;
-	right = tree->right;
-
 	if (tree == NULL)
 		return (0);
+
+	left = tree->left;
+	right = tree->right;
 
 	if (left == NULL && right == NULL)
 		return (1);
